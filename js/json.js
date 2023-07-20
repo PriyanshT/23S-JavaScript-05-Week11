@@ -53,7 +53,7 @@ function showTopFlavors(jsonObj) {
         h2.textContent = flavors[i].name;
         p1.textContent = `Calories: ${flavors[i].calories}`; // "Calories: " + flavors[i].calories
         p2.textContent = `Type: ${flavors[i].type}`;
-        image.setAttribute("src", `images/${flavors[i].image}`); // <img src="images/chocolate-mint.svg">
+        image.setAttribute("src", flavors[i].image); // <img src="images/chocolate-mint.svg">
         // STEP 10g: Build a loop for the ingredients array in the JSON
         var ingredients = flavors[i].ingredients;
         for (let j = 0; j < ingredients.length; j++) {
